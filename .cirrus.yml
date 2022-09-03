@@ -1,0 +1,11 @@
+task:
+  name: "Kernel Build"
+  timeout_in: 2h
+  container:
+      image: panchajanya1999/archlinux:latest
+      cpu: 4
+      memory: 16G
+
+  Build_script:
+      - git clone --depth=1 https://github.com/Subash2001/kernel_realme_RMX1821.git -b Q kernel && cd kernel
+      - bash build.sh
