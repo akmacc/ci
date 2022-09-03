@@ -8,4 +8,4 @@ task:
 
   Build_script:
       - git clone --depth=1 https://github.com/akmacc/android_kernel_realme_x3.git -b msm-4.14 kernel && cd kernel 
-      - bash build.sh
+      - bash build.sh 
